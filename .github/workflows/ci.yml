@@ -1,22 +1,22 @@
 name: CI
 
 on:
-    push:
-        branches:
-            - master
-            - ModdedGamers-GH-Actions
-    pull_request:
-        branches:
-            - master
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
-    yaml-lint:
-        name: yaml-lint
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout repo
-              uses: actions/checkout@v2
-            - name: YAML Lint
-              uses: ibiqlik/action-yamllint@v1.0.0
-              with:
-                  file_or_dir: translations/*.yaml
+  yaml-lint:
+    name: YAML Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Run YAML Lint
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          file_or_dir: translations/*.yaml
