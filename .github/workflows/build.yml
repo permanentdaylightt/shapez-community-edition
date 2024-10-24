@@ -1,6 +1,7 @@
 name: Build shapez
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
