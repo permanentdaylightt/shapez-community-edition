@@ -1,0 +1,55 @@
+name: Build shapez
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+
+      - name: Install Yarn
+        run: npm install -g yarn@1
+
+      - name: Install dependencies
+        run: |
+          yarn
+          cd electron
+          yarn
+
+      - name: Build
+        run: |
+          yarn gulp
+          cd electron
+          yarn startDev &
+
+      - name: Install ffmpeg
+        run: sudo apt-get install -y ffmpeg
+
+      - name: Install Java
+        run: sudo apt-get install -y openjdk-11-jdk
+
+      - name: Package application
+        run: |
+          cd ..
+          yarn package-$PLATFORM-$ARCH
+        env:
+          PLATFORM: linux
+          ARCH: x64
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: shapez-build
+          path: build_output/standalone/shapez-*
