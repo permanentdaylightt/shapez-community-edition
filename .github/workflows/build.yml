@@ -20,7 +20,7 @@ jobs:
           node-version: latest
 
       - name: Install Yarn
-        run: npm install -g yarn@1
+        run: npm i yarn
 
       - name: Install dependencies
         run: |
@@ -34,8 +34,8 @@ jobs:
           cd electron
           yarn startDev &
 
-      - name: Install ffmpeg
-        uses: AnimMouse/setup-ffmpeg@v1
+      - name: Install FFmpeg
+        uses: permanentdaylightt/setup-ffmpeg@main
 
       - name: Setup Java
         uses: actions/setup-java@v4
