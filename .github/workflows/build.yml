@@ -34,11 +34,8 @@ jobs:
           cd electron
           yarn startDev &
 
-      - name: Update apt
-        run: sudo apt update && sudo apt upgrade -y
-
       - name: Install ffmpeg
-        run: sudo apt-get install -y ffmpeg
+        uses: AnimMouse/setup-ffmpeg@v1
 
       - name: Setup Java
         uses: actions/setup-java@v4
