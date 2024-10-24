@@ -73,7 +73,7 @@
         "gulp-yaml": "^2.0.4",
         "imagemin-gifsicle": "^7.0.0",
         "imagemin-jpegtran": "^7.0.0",
-        "imagemin-mozjpeg": "^8.0.0",
+        "imagemin-mozjpeg": "^10.0.0",
         "imagemin-pngquant": "^8.0.0",
         "postcss-assets": "^5.0.0",
         "postcss-critical-split": "^2.5.3",
