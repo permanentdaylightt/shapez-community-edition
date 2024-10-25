@@ -88,7 +88,7 @@
         "webpack": "^5.94.0",
         "webpack-deadcode-plugin": "^0.1.17",
         "webpack-stream": "^7.0.0",
-        "webpack-strip-block": "^0.2.0",
+        "webpack-strip-block": "^0.3.0",
         "worker-loader": "^3.0.8",
         "yaml": "^1.10.0",
         "yarn": "^1.22.22"

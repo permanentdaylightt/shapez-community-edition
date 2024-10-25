@@ -9476,10 +9476,10 @@ webpack-stream@^7.0.0:
     through "^2.3.8"
     vinyl "^2.2.1"
 
-webpack-strip-block@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/webpack-strip-block/-/webpack-strip-block-0.2.0.tgz#c60d4a703e0eeee8895e7f1abe9b5fe914681470"
-  integrity sha512-SX0Qir0bJ94gyqyqAjoH1h72sHngq2onR8pA1ldWNNisaU+QCMJBvK2K//zfStUHcqqkWYYoyMAqiPAj0CXm1g==
+webpack-strip-block@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/webpack-strip-block/-/webpack-strip-block-0.3.0.tgz#e864c8d71fade02c55332f7fb34f7970ba5076c8"
+  integrity sha512-rXN+SI6S7tzUr1Jvhq3Rcl2bGfpY5ZC9XSRm2rH68eYkDheCczEs61iir1A00iv1Nt8FY1J6BDRgXKtil+fk+g==
   dependencies:
     loader-utils "^1.1.0"
 
