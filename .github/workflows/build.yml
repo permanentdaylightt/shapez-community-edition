@@ -41,7 +41,6 @@ jobs:
 
       - name: Package application
         run: |
-          cd ..
           yarn package-win32-x64
 
       - name: Upload build artifact
