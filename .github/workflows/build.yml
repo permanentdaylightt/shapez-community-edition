@@ -20,6 +20,16 @@ jobs:
         with:
           node-version: latest
 
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Install FFmpeg
+        uses: permanentdaylightt/setup-ffmpeg@main
+        id: setup-ffmpeg
+
       - name: Install Yarn
         run: npm i yarn
 
@@ -29,27 +39,12 @@ jobs:
           cd electron
           yarn
 
-      - name: Build
-        run: |
-          yarn gulp
-          cd electron
-          yarn startDev &
-
-      - name: Install FFmpeg
-        uses: permanentdaylightt/setup-ffmpeg@main
-
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '21'
-
       - name: Package application
         run: |
           cd ..
           yarn package-$PLATFORM-$ARCH
         env:
-          PLATFORM: linux
+          PLATFORM: win32
           ARCH: x64
 
       - name: Upload build artifact
