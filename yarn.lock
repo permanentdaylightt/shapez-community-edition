@@ -357,10 +357,10 @@
   resolved "https://registry.yarnpkg.com/@tokenizer/token/-/token-0.3.0.tgz#fe98a93fe789247e998c75e74e9c7c63217aa276"
   integrity sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==
 
-"@tsconfig/node-lts@^20.1.3":
-  version "20.1.3"
-  resolved "https://registry.yarnpkg.com/@tsconfig/node-lts/-/node-lts-20.1.3.tgz#8cdf6fa6c593bf5e16e53134ed377627a58a746e"
-  integrity sha512-m3b7EP2U+h5tNSpaBMfcTuHmHn04wrgRPQQrfKt75YIPq6kPs2153/KfPHdqkEWGx5pEBvS6rnvToT+yTtC1iw==
+"@tsconfig/node-lts@^22.0.0":
+  version "22.0.0"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node-lts/-/node-lts-22.0.0.tgz#3b3c5eeeca0c5aa06774c2642720c30dbee13d27"
+  integrity sha512-6y6CBFe0etz2xU1s0rGOj7pLsvbYXM9l/RNmBQOKI3S5DFrp1jigxx8uYupG5O6cCNXNlOE/1gquoQH01+kz5w==
 
 "@tsconfig/strictest@^2.0.5":
   version "2.0.5"
