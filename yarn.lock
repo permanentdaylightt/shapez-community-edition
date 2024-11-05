@@ -497,11 +497,12 @@
     "@types/html-minifier" "*"
     "@types/node" "*"
 
-"@types/gulp@^4.0.9":
-  version "4.0.10"
-  resolved "https://registry.yarnpkg.com/@types/gulp/-/gulp-4.0.10.tgz#d7e2096a9883720f167b84dee52d5219d7d639c5"
-  integrity sha512-spgZHJFqiEJGwqGlf7T/k4nkBpBcLgP7T0EfN6G2vvnhUfvd4uO1h8RwpXOE8x/54DVYUs1XCAtBHkX/R3axAQ==
+"@types/gulp@^4.0.17":
+  version "4.0.17"
+  resolved "https://registry.yarnpkg.com/@types/gulp/-/gulp-4.0.17.tgz#b314c3762d08d8d69b7c0b86f78d069bafd65009"
+  integrity sha512-+pKQynu2C/HS16kgmDlAicjtFYP8kaa86eE9P0Ae7GB5W29we/E2TIdbOWtEZD5XkpY+jr8fyqfwO6SWZecLpQ==
   dependencies:
+    "@types/node" "*"
     "@types/undertaker" ">=1.2.6"
     "@types/vinyl-fs" "*"
     chokidar "^3.3.1"
@@ -1836,22 +1837,7 @@ chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.2:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chokidar@^3.3.1, chokidar@^3.5.1:
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
-  integrity sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==
-  dependencies:
-    anymatch "~3.1.2"
-    braces "~3.0.2"
-    glob-parent "~5.1.2"
-    is-binary-path "~2.1.0"
-    is-glob "~4.0.1"
-    normalize-path "~3.0.0"
-    readdirp "~3.6.0"
-  optionalDependencies:
-    fsevents "~2.3.2"
-
-chokidar@^3.5.3:
+chokidar@^3.3.1, chokidar@^3.5.1, chokidar@^3.5.3:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.6.0.tgz#197c6cc669ef2a8dc5e7b4d97ee4e092c3eb0d5b"
   integrity sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==
