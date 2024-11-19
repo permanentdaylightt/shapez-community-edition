@@ -90,7 +90,7 @@
         "webpack-stream": "^7.0.0",
         "webpack-strip-block": "^0.3.0",
         "worker-loader": "^3.0.8",
-        "yaml": "^1.10.0",
+        "yaml": "^2.6.1",
         "yarn": "^1.22.22"
     }
 }
